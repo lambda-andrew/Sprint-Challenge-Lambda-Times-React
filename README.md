@@ -28,10 +28,21 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+[ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+    PropTypes are used to define the 'interface' for using a component. Also, they serve as a way to tell the next developer what kind of data we are passing to the child component. It's important to check our data in JS to keep from passing the wrong data from parent to child components.
+
 - [ ] Describe a life-cycle event in React?
+
+    `componentWillUnmount()` is the clean up event. It's used to clear anything `componentDidMount()` called, i.e. canceling network requests, or cleaning up any subscriptions that were created. 
+
 - [ ] Explain the details of a Higher Order Component?
+
+    HOCs are an advanced technique for reusing component logic. They are a function that takes a component and returns a new component. 
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+    Three ways to style components in React are styled-components, SASS, and CSS. Styled-components allows you to write CSS in your JS making it easier to find the correct CSS for that component. SASS is benefitial because it is already a part of React and is easy to write. CSS is benefitial because its basic, and easy to understand.
 
 ## Project Setup
 
