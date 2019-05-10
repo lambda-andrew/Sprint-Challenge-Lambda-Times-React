@@ -29,9 +29,17 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+Answer = PropTypes aid developers in catching bugs to determine what props are be passed down. 
+
 - [ ] Describe a life-cycle event in React?
+Answer = The third phase is the Death/Un-mounting phase. In this phase the component is removed from the screen using a componentWillUnmount function.
+
 - [ ] Explain the details of a Higher Order Component?
+A = HOC is an advanced pattern seen in React. It is essentially a function that receives a Component as an argument and then returns a source.
+Answer = 
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+Answer = You can use Reactstrap or styled components to style in React. The nice thing about Reactstrap is that there are many pre-built components.
 
 ## Project Setup
 
