@@ -1,0 +1,19 @@
+What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes are used to check data types.  For instance, is the incoming data supposed to be a string, number, boolean, etc?  PropTypes will not necessarily prevent an application from running, but it will inform the developer if the correct data is being used.  This could possible prevent future errors, but it's not necessarily a “testing” tool.  
+
+
+Describe a life-cycle event in React?
+
+Life-cycle events are a series of events that occur during the process of running a react application.  During our lectures it was often referred to as the birth, growth, and then death of an event. These may coincide with mounting, updating and un-mounting.  Life-cycle events include: constructor, render, componentDidMount, componentDidUpdate and componentWillUnmount.
+
+
+
+Explain the details of a Higher Order Component?
+
+Not sure I'm the right person to answer this question. It's a component that receives a component as its argument.  They're used to share logic/functionality between components.  Each component mounted via a higher order component is its own stateful component.  It is also considered a container to potentially perform 'higher level logic'
+
+
+What are three different ways to style components in React? Explain some of the benefits of each.
+
+First, we have standard CSS.  The benefit is that we all know it. It doesn't require any plugins.  Just start typing.  Second, we can use a plugin like styled-components.  This is a nice option because it looks at behaves similar to regular CSS.  Moreover the CSS can be kept in the page it affects, or can be parked in another paged and imported. One can also create themes, etc.  A lot of options.   And third, another plugin option is reactstrap.  This is nice because it uses familiar bootstrap components.  So, if one is familiar with bootstrap this might be a great option.  
