@@ -1,19 +1,31 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = props => {
   return (
     <div className="card">
-      <div className="headline">{/* headline goes here */}</div>
+      <div className="headline">{props.data.headline}</div>
       <div className="author">
         <div className="img-container">
-          <img src={'' /* image source goes here */} />
+          <img src={props.data.img} alt='Author'/>
         </div>
-        <span>By {/* author goes here */}</span>
+        <span>By {props.data.author}</span>
       </div>
     </div>
   );
 };
 
-// Make sure to include PropTypes.
+Card.propTypes = {
+  data: PropTypes.shape({
+    headline: PropTypes.string.isRequired,
+    tab: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired
+  })
+}
+
+Card.defaultProps = {
+  data: {}
+}
 
 export default Card;
